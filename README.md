@@ -8,7 +8,7 @@ The Renovate app's own token can't read that repository's tags, so [`renovate.js
 
 With the host rule, Renovate finds the update. It then runs `apm install` to refresh [`apm.lock.yaml`](apm.lock.yaml), but passes `apm install` no credentials. APM can't fetch the private repository, so the PR gets an "Artifact update problem" comment. `apm.yml` moves to `v1.1.0` while `apm.lock.yaml` and `.claude/skills/hello/SKILL.md` stay at `v1.0.0`.
 
-The skill's repository is private, so only Renovate's job log shows the failure. The relevant lines are in the discussion.
+Renovate's PR: [#1](https://github.com/MPV/renovate-apm-private-dependency/pull/1), which changes only `apm.yml`. Its artifact error quotes only APM's stderr, a policy warning. APM prints the authentication failure to stdout, so only Renovate's job log shows it; the relevant lines are in the discussion.
 
 ## Expected behavior
 
