@@ -16,4 +16,4 @@ Renovate passes `apm install` the token its lookups use, so the PR moves `apm.ym
 
 ## Link to the Renovate issue or Discussion
 
-Not posted yet. The draft is [MPV/renovate#23](https://github.com/MPV/renovate/issues/23).
+[renovatebot/renovate#46874](https://github.com/renovatebot/renovate/discussions/46874)
