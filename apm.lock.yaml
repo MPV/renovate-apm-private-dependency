@@ -1,0 +1,38 @@
+lockfile_version: '1'
+apm_version: 0.33.0
+dependencies:
+- repo_url: mpv/renovate-apm-private-skill
+  materialization_repo_url: MPV/renovate-apm-private-skill
+  name: hello
+  host: github.com
+  resolved_commit: ef3619a2b58a34e0d25aa3b5c0a8722e64568dc1
+  resolved_ref: v1.0.0
+  version: unknown
+  virtual_path: skills/hello
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .claude/skills/hello
+  - .claude/skills/hello/SKILL.md
+  deployed_file_hashes:
+    .claude/skills/hello/SKILL.md: sha256:2d8e8f8b7d21e7465419a895c99b912923383f9efac3bb66cecb7a23fc788cd3
+  content_hash: sha256:31802595cce0b232e6e69c3e52d206d0739c293d9bd5ab9a50ab9c98e2c7bd89
+deployments:
+- kind: project-relative
+  target: claude
+  value: .claude/skills/hello
+  runtime: null
+  scope: project
+  owners:
+  - mpv/renovate-apm-private-skill/skills/hello
+  active_owner: mpv/renovate-apm-private-skill/skills/hello
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/hello/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - mpv/renovate-apm-private-skill/skills/hello
+  active_owner: mpv/renovate-apm-private-skill/skills/hello
+  content_hash: sha256:2d8e8f8b7d21e7465419a895c99b912923383f9efac3bb66cecb7a23fc788cd3
