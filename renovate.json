@@ -1,1 +1,9 @@
-{}
+{
+  "hostRules": [
+    {
+      "hostType": "github-tags",
+      "matchHost": "api.github.com",
+      "token": "{{ secrets.APM_PRIVATE_SKILL_TOKEN }}"
+    }
+  ]
+}
