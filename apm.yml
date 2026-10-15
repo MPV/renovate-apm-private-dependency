@@ -3,4 +3,4 @@ version: 1.0.0
 targets: [claude]
 dependencies:
   apm:
-    - MPV/renovate-apm-private-skill/skills/hello#v1.0.0
+    - MPV/renovate-apm-private-skill/skills/hello#v1.1.0
